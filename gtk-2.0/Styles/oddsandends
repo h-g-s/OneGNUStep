@@ -1,0 +1,4 @@
+gtk-menu-drop-shadow = 1
+gtk-menu-shadow-delay = 0
+#gtk-icon-sizes = "panel-menu=24,24:panel=24,24:gtk-button=16,16:gtk-large-toolbar=24,24"
+#gtk-icon-sizes = "gtk-large-toolbar=16,16:gtk-small-toolbar=16,16"

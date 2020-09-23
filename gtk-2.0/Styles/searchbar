@@ -1,0 +1,4 @@
+style "searchbar" 
+	{
+	bg[NORMAL] = "#363636"
+	}

@@ -1,0 +1,18 @@
+style "menu"			= "default"
+{
+#bg_pixmap[NORMAL]       = "Images/Menu-Menubar/menu-overlay.gif"
+xthickness			= 3
+ythickness			= 1
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      recolorable    	= TRUE
+      detail				= "menu"
+      file				= "Images/Menu-Menubar/menu.gif"
+      border			= { 34, 3, 3, 3 }
+      stretch			= TRUE
+    }
+  }
+}

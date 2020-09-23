@@ -1,0 +1,51 @@
+style "entry"			= "default"
+{
+#  xthickness            			= 2
+#  ythickness            			= 2
+  
+  GtkWidget::interior_focus	= 0
+  #GtkEntry::shadow_type = GTK_SHADOW_NONE
+  engine "pixmap"
+  {
+    image
+    {
+      function			= FOCUS
+      recolorable		= TRUE
+      file			= "Images/Shadows/text-entry.gif"
+      border			= { 2,2,2,2 }
+      stretch			= TRUE
+    }	
+ image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      shadow			= IN
+      state			= NORMAL
+#      file			= "Images/Shadows/entry-shadow-in.gif"
+     file			= "Images/Shadows/text-entry.gif"
+      border			= { 2,2,2,2 }
+      stretch			= TRUE
+    }	
+image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      shadow			= OUT
+      state			= NORMAL
+#      file			= "Images/Shadows/entry-shadow-in.gif"
+     file			= "Images/Shadows/text-entry.gif"
+      border			= { 2,2,2,2 }
+      stretch			= TRUE
+    }	
+  image
+   {
+     function			= SHADOW
+     detail			= "entry"
+     shadow			= IN
+     recolorable		= FALSE
+     file			= "Images/Shadows/text-entry.gif"
+     border			= { 2,2,2,2 }
+     stretch			= TRUE
+    }
+  }
+}

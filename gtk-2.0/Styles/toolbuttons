@@ -1,0 +1,47 @@
+style "toolbuttons" = "default"
+{
+  xthickness            			= 1
+  ythickness            			= 1
+
+	GtkWidget::focus_padding = 2
+
+	engine "pixmap" {
+      
+image
+		{
+			function        		= BOX
+			recolorable     		= TRUE
+			state					= NORMAL
+			file            			= "Images/Toolbar/toolbutton-normal.gif"
+			border          		= { 5, 5, 5, 5 }
+			stretch         		= TRUE
+		}
+image
+		{
+			function        		= BOX
+			recolorable     		= TRUE
+			state			= PRELIGHT
+			file            		= "Images/Toolbar/toolbutton-prelight.gif"
+			border          		= { 5, 6, 5, 5 }
+			stretch         		= TRUE
+		}
+image
+		{
+			function        		= BOX
+			recolorable     		= TRUE
+			state			= ACTIVE
+			file            		= "Images/Toolbar/toolbutton-pressed.gif"
+			border          		= {5, 6, 5, 5}
+			stretch         		= TRUE
+		}  
+image
+		{
+			function        		= BOX
+			recolorable     		= TRUE
+			state					= INSENSITIVE
+			file            			= "Images/Toolbar/toolbutton-normal.gif"
+			border          		= { 5, 5, 5, 5 }
+			stretch         		= TRUE
+		}  
+	}
+}

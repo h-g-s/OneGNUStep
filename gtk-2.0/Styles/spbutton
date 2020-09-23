@@ -1,0 +1,23 @@
+# recognizable pressed toggle buttons
+# SPIcons seem to erase the background first. That's why I can't use
+# the button style.
+
+style "SPbutton"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function		= BOX
+      shadow		= IN
+      recolorable	= TRUE
+      file			= "Images/Shadows/shadow-out.gif"
+      border		= { 2, 2, 2, 2 }
+      stretch		= TRUE
+    }
+    image
+    {
+      function		= BOX
+    }
+  }
+}

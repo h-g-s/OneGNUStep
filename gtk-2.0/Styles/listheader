@@ -1,0 +1,75 @@
+style "listheader" # = "default"
+{
+   #Comment out the ythickness setting below for thicker column headers.
+   #ythickness = 0
+#	GtkTreeView::odd_row_color  = "#1c1c1c"
+#	GtkTreeView::even_row_color = "#111111"
+#	GtkTreeView::odd_row_color  = "#d0d0d0"
+#	GtkTreeView::even_row_color = "#e0e0e0"
+
+	GtkTreeView::odd_row_color  = "#d0d0d0"
+	GtkTreeView::even_row_color = "#d7d7d7"
+
+#  fg[NORMAL] = "#E0E0E0"
+#  fg[PRELIGHT] = "#E0E0E0"
+
+#  text[NORMAL] = "#c7c8c9"
+	
+   engine "pixmap" 
+	{
+
+	#This image is used to draw the headers of columns in list views when they are
+	#not selected.
+    	image
+      		{
+        		function        	= BOX
+			recolorable    	= TRUE
+			state				= NORMAL
+			file            		= "Images/ListHeaders/list_header.gif"
+			border          	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+      		}
+
+	#This image is used to draw the column headers in list views when they are
+	#clicked.
+    	image
+      		{
+        		function        	= BOX
+			recolorable    	= TRUE
+			state				= PRELIGHT
+			file            		= "Images/ListHeaders/list_header-prelight.gif"
+			border          	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+      		}
+
+	#Does this do anything?
+
+	image
+      		{
+        		function        	= BOX
+			recolorable    	= TRUE
+			state				= ACTIVE
+			file					= "Images/ListHeaders/list_header-pressed.gif"
+			border          	= { 2, 2, 2, 2}
+			stretch         	= TRUE
+      		}
+	image
+      		{
+        		function        	= BOX
+			recolorable    	= TRUE
+			state				= SELECTED
+			file					= "Images/ListHeaders/list_header-prelight.gif"
+			border          	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+      		}
+	image
+      		{
+        		function        	= BOX
+			recolorable    	= TRUE
+			state				= INSENSITIVE
+			file					= "Images/ListHeaders/list_header-insens.gif"
+			border          	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+      	}
+  	}
+}

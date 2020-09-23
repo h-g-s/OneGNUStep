@@ -1,0 +1,165 @@
+style "notebook"		= "default"
+{
+  xthickness            			= 10
+#  ythickness            			= 10
+
+  #GtkNotebook         :: tab-overlap                      = 1      
+
+  engine "pixmap" 
+    {
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	state			= ACTIVE
+	file			= "Images/Tabs/tab-bottom.gif"
+	border			= { 14,14,1,1}
+	stretch			= TRUE
+	gap_side		= TOP
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	state			= ACTIVE
+	file			= "Images/Tabs/tab-top.gif"
+	border			= { 14,14,1,1}
+#	border			= { 14,14,3,3}
+	stretch			= TRUE
+	gap_side		= BOTTOM
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	state			= ACTIVE
+	file			= "Images/Tabs/tab-left.gif"
+	border			= {  1,1,14,14}
+	stretch			= TRUE
+	gap_side			= RIGHT
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	state			= ACTIVE
+	file			= "Images/Tabs/tab-right.gif"
+	border			= { 1,1,14,14}
+	stretch			= TRUE
+	gap_side		= LEFT
+      }	
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	file			= "Images/Tabs/tab-top-active.gif"
+	border			= { 14,14,1,1}
+	#border			= { 14,14,20,1}
+	stretch			= TRUE
+	gap_side		= BOTTOM
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	file			= "Images/Tabs/tab-bottom-active.gif"
+	border			= { 14,14,1,1}
+	stretch			= TRUE
+	gap_side		= TOP
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	file			= "Images/Tabs/tab-left-active.gif"
+	border			= {  1,1,14,14}
+	stretch			= TRUE
+	gap_side		= RIGHT
+      }
+    image 
+      {
+     function			= EXTENSION
+	recolorable		= TRUE
+	file			= "Images/Tabs/tab-right-active.gif"
+	border			= {  1,1,14,14}
+	stretch			= TRUE
+	gap_side		= LEFT
+      }
+
+# How to draw boxes with a gap on one side (ie the page of a notebook)
+
+    image 
+      {
+     function				= BOX_GAP
+	recolorable			= TRUE
+	file				= "Images/Tabs/notebook.gif" 
+#	border				= { 5, 5, 5, 5 }
+	border				= { 2, 2, 2, 2 }
+	stretch				= TRUE
+	gap_file			= "Images/Others/null.gif"
+	gap_border     		= { 0, 0, 0, 0 }
+	gap_start_file		= "Images/Others/null.gif"
+	gap_start_border	= { 0, 0, 0, 0 }
+	gap_end_file		= "Images/Others/null.gif"
+	gap_end_border	= { 0, 0, 0, 0 }
+	gap_side				= TOP
+      }
+    image 
+      {
+     function				= BOX_GAP
+	recolorable			= TRUE
+	file						= "Images/Tabs/notebook.gif"
+	border				= { 5, 5, 5, 5 }
+	stretch				= TRUE
+	gap_file				= "Images/Others/null.gif"
+	gap_border			= { 10, 10,5, 5 }
+	gap_start_file		= "Images/Others/null.gif"
+	gap_start_border	= { 10, 10, 5, 5 }
+	gap_end_file		= "Images/Others/null.gif"
+	gap_end_border		= { 10, 10, 5, 5 }
+	gap_side				= BOTTOM
+      }
+    image 
+      {
+     function				= BOX_GAP
+	recolorable			= TRUE
+	file						= "Images/Tabs/notebook.gif"
+	border				= { 5, 5, 5, 5 }
+	stretch				= TRUE
+	gap_file				= "Images/Others/null.gif"
+	gap_border			= { 0, 1, 0, 0 }
+	gap_start_file		= "Images/Others/null.gif"
+	gap_start_border	= { 0, 0, 2, 0 }
+	gap_end_file		= "Images/Others/null.gif"
+	gap_end_border	= { 0, 2, 1, 0 }
+	gap_side				= LEFT
+      }
+    image 
+      {
+     function				= BOX_GAP
+	recolorable			= TRUE
+	file						= "Images/Tabs/notebook.gif" 
+	border				= { 5, 5, 5, 5 }
+	stretch				= TRUE
+	gap_file				= "Images/Others/null.gif"
+	gap_border			= { 0, 0, 1, 0 }
+	gap_start_file		= "Images/Others/null.gif"
+	gap_start_border	= { 2, 0, 2, 0 }
+	gap_end_file		= "Images/Others/null.gif"
+	gap_end_border	= { 0, 0, 0, 2 }
+	gap_side				= RIGHT
+      }
+
+# How to draw the box of a notebook when it isnt attached to a tab
+
+    image 
+      {
+     function			= BOX
+	recolorable		= TRUE
+	file					= "Images/Tabs/notebook.gif"
+	border			= { 2,2,2,2 }
+	stretch			= TRUE
+	#gap_side		= TOP
+      }
+  }
+}

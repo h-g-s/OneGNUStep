@@ -1,0 +1,102 @@
+style "radiobutton"	= "default"
+{
+  engine "pixmap" 
+    {
+	#This is the image used to draw an unchecked box.
+        image 
+	{
+            function        		= OPTION
+            recolorable    		= TRUE
+            state 				= NORMAL
+            shadow          		= OUT
+#            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_stretch 	= FALSE
+        }
+ image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            state 				= PRELIGHT
+            shadow          		= OUT
+#            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_stretch 	= FALSE
+        }
+ image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            state 				= ACTIVE
+            shadow          		= OUT
+#            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_stretch 	= FALSE
+        }
+ image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+            state 				= INSENSITIVE
+            shadow         		= OUT
+#            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_stretch 	= FALSE
+        }
+
+	#This is the image used to draw a selected (checked) box.
+
+        image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    	  state 				= NORMAL
+            shadow          		= IN
+#            overlay_file    		= "Images/Check-Radio/option2.gif"
+            overlay_file    		= "Images/Check-Radio/option2.gif"
+            overlay_stretch 	= FALSE
+        }
+  image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    	  state 				= PRELIGHT
+            shadow          		= IN
+#            overlay_file    		= "Images/Check-Radio/option4.gif"
+            overlay_file    		= "Images/Check-Radio/option4.gif"
+            overlay_stretch 	= FALSE
+        }
+ image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	    	  state 				= ACTIVE
+            shadow          		= IN
+#            overlay_file    		= "Images/Check-Radio/option4.gif"
+            overlay_file    		= "Images/Check-Radio/option4.gif"
+            overlay_stretch 	= FALSE
+        }
+     image 
+	{
+            function        		= OPTION
+            recolorable     		= TRUE
+	   	  state 				= INSENSITIVE
+            shadow          		= IN
+#            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_file    		= "Images/Check-Radio/option1.gif"
+            overlay_stretch 	= FALSE
+        }
+
+	#Use this image to draw the highlight when a line with a check box
+	#is moused over.
+
+	image 
+	{
+          function        		= FLAT_BOX
+          recolorable     		= TRUE
+      	stretch				= TRUE
+          file            			= "Images/Check-Radio/checklight.gif"
+          border          		= { 2, 2, 2, 2 }
+        }
+    }
+}

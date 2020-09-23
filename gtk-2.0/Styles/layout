@@ -1,0 +1,26 @@
+style "layout"	= "default"
+{
+  engine "pixmap"
+  {
+   image
+   {
+     function		= SHADOW
+     detail			= "entry"
+     shadow		= IN
+     recolorable	= FALSE
+     file			= "Images/Shadows/text.gif"
+     border		= { 1, 1, 1, 1 }
+     stretch		= TRUE
+   }
+    image
+    {
+      function		= BOX
+      detail		= "button"
+      state			= NORMAL
+      file			= "Images/Buttons/button-normal.gif"
+      recolorable	= TRUE
+      border		= { 2, 3, 2, 3 }
+      stretch		= TRUE
+    }
+  }
+}

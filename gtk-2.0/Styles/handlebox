@@ -1,0 +1,25 @@
+style "handlebox"	= "default"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      #function			 = SHADOW
+    }
+    image
+    {
+      function				= HANDLE
+      recolorable			= TRUE
+      overlay_file			= "Images/Handles/handle-v.gif"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+    image
+    {
+      function				= HANDLE
+      overlay_file			= "Images/Handles/handle-h.gif"
+      overlay_stretch 	= FALSE
+      orientation			= HORIZONTAL
+    }
+  }
+}

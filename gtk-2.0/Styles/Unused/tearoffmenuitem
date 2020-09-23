@@ -1,0 +1,21 @@
+style "tearoffmenuitem"	= "menuitem"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function				= ARROW
+      file					= "Arrows/arrow-left.gif"
+      stretch				= TRUE
+      arrow_direction	= LEFT
+    }
+#    image
+#    {
+#      function		= HLINE
+#      file				= "cuthere.gif"
+#      border			= { 0, 0, 0, 0 }
+#      stretch		= TRUE
+#    }
+  }
+}
+

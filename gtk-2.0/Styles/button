@@ -1,0 +1,49 @@
+style "button"		= "default"
+{
+
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      detail				= "buttondefault"
+      recolorable		= TRUE
+      file				= "Images/Buttons/button-default.gif"
+      border			= {2, 2, 2, 2}
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      recolorable		= TRUE
+#      file				= "Images/Buttons/button-prelight.gif"
+      file				= "Images/Buttons/button-default.gif"
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= ACTIVE
+      file				= "Images/Buttons/button-pressed.gif"
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }	
+    image 
+   {
+     function			= BOX
+     state				= INSENSITIVE
+     file					= "Images/Buttons/button-insensitive.gif"
+     border			= { 2, 2, 2, 2 }
+     stretch			= TRUE
+    }
+    image 
+    {
+      function			= BOX
+      file				= "Images/Buttons/button-normal.gif"		
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }	
+  }
+}

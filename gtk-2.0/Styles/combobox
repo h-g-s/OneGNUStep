@@ -1,0 +1,108 @@
+style "combobox"		= "default"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      state				= PRELIGHT
+      file				= "Images/Combo/combo-normal.gif"
+      border			= { 2, 2, 2, 2}
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      state				= NORMAL
+      file				= "Images/Combo/combo-normal.gif"
+      border			= { 2, 2, 2, 2}
+      stretch			= TRUE
+    }
+
+  image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      state				= ACTIVE
+      file				= "Images/Combo/combo-normal.gif"
+      border			= { 2, 2, 2, 2}
+      stretch			= TRUE
+    }
+ image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      state				= INSENSITIVE
+      file				= "Images/Combo/combo-normal.gif"
+      border			= { 2, 2, 2, 2}
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= TAB
+      state				= INSENSITIVE
+      recolorable		= TRUE
+      overlay_file		= "Images/Combo/combo-arrow-insens.gif"
+      overlay_stretch	= FALSE
+    }
+    image
+    {
+      function				= TAB
+      recolorable			= TRUE
+      state					= NORMAL
+      overlay_file			= "Images/Combo/combo-arrow.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+    }
+  image
+    {
+      function				= TAB
+      recolorable			= TRUE
+      state					= PRELIGHT
+      overlay_file			= "Images/Combo/combo-arrow-prelight.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+    }
+
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state				= PRELIGHT
+      overlay_file			= "Images/Combo/combo-arrow.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state				= NORMAL
+      overlay_file			= "Images/Combo/combo-arrow.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state				= ACTIVE
+      overlay_file			= "Images/Combo/combo-arrow.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state				= INSENSITIVE
+      overlay_file			= "Images/Combo/combo-arrow.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+
+
+  }
+}

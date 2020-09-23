@@ -1,0 +1,5 @@
+style "notebooktabs"		= "default"
+{
+  xthickness            			= 0
+  ythickness            			= 0
+}

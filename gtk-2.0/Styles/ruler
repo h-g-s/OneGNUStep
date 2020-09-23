@@ -1,0 +1,23 @@
+style "ruler"		= "default"
+{
+  engine "pixmap" {
+    image 
+      {
+     function			= BOX
+	recolorable		= TRUE
+	detail				= "vruler"
+	file					= "Images/Others/ruler.gif"
+	border			= { 2, 2, 2, 2 }
+	stretch			= TRUE
+      }
+    image 
+      {
+     function			= BOX
+	recolorable		= TRUE
+	detail				= "hruler"
+	file					= "Images/Others/ruler.gif"
+	border			= { 2, 2, 2, 2 }
+	stretch			= TRUE
+      }
+  }
+}

@@ -1,0 +1,28 @@
+style "progressbar" {
+  fg[PRELIGHT]       		= "#333333"
+  text[PRELIGHT]       	= "#333333"
+  xthickness            		= 1
+  ythickness            		= 1
+  engine "pixmap" 
+  {
+    image
+    {
+      function				= BOX
+      detail					= "trough"
+      file					= "Images/ProgressBar/trough-progressbar-horiz.gif"
+      border				= { 2, 2, 2, 2 }
+      stretch				= TRUE
+#      orientation		= HORIZONTAL
+    }
+    image
+    {
+      function				= BOX
+      detail					= "bar"
+      file					= "Images/ProgressBar/progressbar-horiz.gif"
+      border				= { 2, 2, 2, 2 }
+      stretch				= TRUE
+#      orientation		= HORIZONTAL
+    } 
+  }
+}
+

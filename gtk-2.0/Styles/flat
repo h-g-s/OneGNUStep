@@ -1,0 +1,10 @@
+style "flat" = "default"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = SHADOW
+    }
+  }
+}

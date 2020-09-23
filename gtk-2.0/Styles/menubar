@@ -1,0 +1,55 @@
+style "menubar"		
+{
+  fg[NORMAL] = "#101010"
+  text[NORMAL] = "#101010"
+  fg[PRELIGHT] = "#101010"
+  fg[ACTIVE] = "#101010"
+  fg[INSENSITIVE] = "#303030"
+  text[PRELIGHT] = "#101010"
+
+
+xthickness			= 1
+ythickness			= 2
+	engine "pixmap"
+	{
+		image
+		{
+			function	= BOX
+			state = NORMAL
+			file		= "Images/Menu-Menubar/menubar.gif"
+			border	= { 2, 2, 2, 2 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = ACTIVE
+			file		= "Images/Menu-Menubar/menubar.gif"
+			border	= { 2, 2, 2, 2 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = INSENSITIVE
+			file		= "Images/Menu-Menubar/menubar.gif"
+			border	= { 2, 2, 2, 2 }
+			stretch	= TRUE
+    		}
+
+  image
+    {
+      function			= BOX
+      recolorable		= TRUE
+			state = PRELIGHT
+     file				= "Images/Menu-Menubar/menubar-item.gif"
+
+      border			= { 10, 10, 10, 10 }
+      stretch			= TRUE
+    }
+
+ 	}
+}
+

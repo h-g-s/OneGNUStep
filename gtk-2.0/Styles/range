@@ -1,0 +1,105 @@
+style "range"			= "default"
+{	
+  engine "pixmap" 
+  {
+    image 
+    {
+      function			= BOX
+      recolorable		= TRUE
+      detail				= "trough"
+      file				= "Images/Range/trough-horizontal.gif"
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+      orientation		= HORIZONTAL
+    }	
+    image 
+    {
+      function			= BOX
+      recolorable		= TRUE
+      detail				= "trough"
+      file				= "Images/Range/trough-vertical.gif"
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+      orientation		= VERTICAL
+    }
+
+############### the sliders ###############
+
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= NORMAL
+      file				= "Images/Range/slider-horiz.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-h.gif"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= PRELIGHT
+      file				= "Images/Range/slider-horiz.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-h.gif"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= INSENSITIVE
+      file				= "Images/Range/slider-horiz.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-h.gif"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+
+######################### VERTICAL ###########################
+
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= NORMAL
+      file					= "Images/Range/slider-vert.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-v.gif"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= PRELIGHT
+      file					= "Images/Range/slider-vert.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-v.gif"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+    image 
+    {
+      function				= SLIDER
+      recolorable			= TRUE
+      state           		= INSENSITIVE
+      file					= "Images/Range/slider-vert.gif"
+      border				= { 3, 3, 3, 3 }
+      stretch				= TRUE
+      overlay_file			= "Images/Range/tick-v.gif"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+  }
+}
+

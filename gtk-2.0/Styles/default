@@ -1,0 +1,238 @@
+style "default"
+{
+#  GtkScrolledWindow::scrollbars_within_bevel = TRUE
+   GtkScrolledWindow::scrollbar_spacing = 0
+
+#  GtkWidget::interior_focus				= 7
+#  GtkWidget::focus_padding				= 0
+
+  GtkWidget::interior_focus				= 1 #TRUE
+  GtkWidget::focus_padding				= 1
+#  GtkWidget::focus_line_width				= 2
+#  GtkWidget::focus_line_pattern				= "\1\1"
+
+#  GtkComboBox::appears_as_list	= TRUE
+
+#  GtkNotebook::tab_curvature = 40
+#  GtkNotebook::tab-overlap = 10
+
+  GtkButton::default_border			= { 0, 0, 0, 0 }
+  GtkButton::default_outside_border	= { 0, 0, 0, 0 }
+ 
+  GtkRange::trough_border				= 1
+#  GtkRange::slider_width				= 15
+  GtkRange::slider_width				= 18
+  GtkRange::stepper_size				= 18
+ 
+  GtkVScale::slider_length 				= 29
+  GtkVScale::slider_width 				= 13
+  GtkHScale::slider_length 				= 29
+  GtkHScale::slider_width 				= 13
+  
+  GtkPaned::handle_size					= 10 #6
+#  GtkScrollbar::min_slider_length		= 50
+  GtkScrollbar::min_slider_length		= 30
+  GtkCheckButton::indicator_size		= 12
+  GtkCheckButton::indicator_spacing	= 3
+  GtkMenuBar::internal_padding		= 1
+  GtkOptionMenu::indicator_size		= { 15, 8 }
+#  GtkOptionMenu::indicator_size		= { 1, 1 }
+  GtkOptionMenu::indicator_spacing	= { 8, 2, 0, 0 }
+  GtkStatusbar::shadow_type 		= GTK_SHADOW_NONE
+  GtkSpinButton::shadow_type 		= GTK_SHADOW_NONE
+
+  xthickness            	= 2
+  ythickness            	= 2
+
+  GtkEntry::cursor_color      = "#101010"
+  GtkTextView::cursor_color   = "#101010"
+
+  GtkScrollbar::has_backward_stepper = 0
+  GtkScrollbar::has_secondary_forward_stepper = 0
+
+  GtkScrollbar::has_forward_stepper = 1
+  GtkScrollbar::has_secondary_backward_stepper = 1
+
+
+# Controles
+	#fg[NORMAL]        = "#c7c8c9"
+	fg[NORMAL]        = "#101010" #Texto de los menus y listas en claws
+	fg[PRELIGHT]      = "#101010"
+	fg[ACTIVE]        = "#101010"
+	fg[SELECTED]      = "#909090"
+	fg[INSENSITIVE]   = "#909090"
+
+#	bg[NORMAL]        = "#363636" #Background de las ventanas (no controles ni menus)
+	bg[NORMAL]        = "#B0B0B0" #Background de las ventanas (no controles ni menus)
+#	bg[NORMAL]        = "#9D9EAD" #Background de las ventanas (no controles ni menus)
+	bg[PRELIGHT]      = "#d0d0d0"
+	bg[ACTIVE]        = "#d0d0d0"
+	bg[SELECTED]      = "#444444"
+	bg[INSENSITIVE]   = "#222222"
+
+#Fondo texto
+	#base[NORMAL]      = "#141414"
+	base[NORMAL]      = "#d0d0d0"
+	base[PRELIGHT]    = "#d0d0d0"
+	base[ACTIVE]      = "#d0d0d0"
+	# This affects selected icons in nautilus and selected text background
+	base[SELECTED]    = "#626262"
+	#base[INSENSITIVE] = "#141414"
+	base[INSENSITIVE] = "#d0d0d0"
+
+#Frente texto
+	#text[NORMAL]      = "#c7c8c9"
+	text[NORMAL]      = "#101010"
+	text[PRELIGHT]    = "#101010"
+	text[ACTIVE]      = "#101010"
+	text[SELECTED]    = "#c7c8c9"
+	text[INSENSITIVE] = "#606060"
+
+  engine "pixmap"
+  {
+    image
+    {
+      function				= HANDLE
+      recolorable			= TRUE
+      overlay_file			= "Images/Handles/handle-h.gif"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+    image
+    {
+      function				= HANDLE
+      recolorable			= TRUE
+      overlay_file			= "Images/Handles/handle-v.gif"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+
+####################### SHADOWS ############################x
+
+    image
+    {
+      function			= SHADOW
+      shadow			= IN
+      recolorable		= FALSE
+      file			= "Images/Shadows/shadow-in.gif"
+      border			= { 3, 3, 2, 2 }
+      stretch			= TRUE
+    }
+    image
+    {
+       function			= SHADOW
+       shadow			= OUT
+       recolorable		= TRUE
+       file			= "Images/Shadows/shadow-out.gif"
+       border			= { 3, 3, 3, 3 }
+       stretch			= TRUE
+    }
+
+    image
+    {
+       function			= SHADOW
+       shadow			= ETCHED_IN
+       recolorable		= TRUE
+       file			= "Images/Frame-Gap/frame1.gif"				
+       border			= { 2, 2, 2, 2 }
+       stretch			= TRUE
+    }
+    image
+    {
+       function			= SHADOW
+       shadow			= ETCHED_OUT
+       recolorable		= TRUE
+       file			= "Images/Shadows/shadow-none.gif"
+       border			= { 2, 2, 2, 2 }
+       stretch			= TRUE
+    }
+    image
+    {
+       function			= SHADOW_GAP
+       recolorable		= TRUE
+       file			= "Images/Frame-Gap/frame1.gif"
+       border			= { 2, 2, 2, 2 }
+       stretch			= TRUE
+       gap_start_file		= "Images/Frame-Gap/frame-gap-start.gif"
+       gap_start_border		= { 2, 0, 2, 0 }
+       gap_end_file		= "Images/Frame-Gap/frame-gap-end.gif"
+       gap_end_border		= { 0, 2, 2, 0 }
+       gap_side			= TOP
+    }
+    image
+    {
+       function		= VLINE
+       recolorable		= TRUE
+       file				= "Images/Lines/line-v.gif"
+       border			= { 1, 1, 0, 0 }
+       stretch			= TRUE
+    }
+    image
+    {
+      function			= HLINE
+      recolorable		= TRUE
+      file				= "Images/Lines/line-h.gif"
+      border			= { 0, 0, 1, 1 }
+      stretch			= TRUE
+    }
+
+    # focus
+
+    image
+    {
+      function			= FOCUS
+      recolorable		= TRUE
+      file				= "Images/Others/focus.gif"
+      border			= { 1, 1, 1, 1 } 
+#      stretch			= FALSE
+      stretch			= TRUE
+    }	
+
+    # arrows
+
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      overlay_file			= "Images/Arrows/arrow-up.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= UP
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      overlay_file			= "Images/Arrows/arrow-down.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      overlay_file			= "Images/Arrows/arrow-left.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= LEFT
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      overlay_file			= "Images/Arrows/arrow-right.gif"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= RIGHT
+    }
+    image 
+      {
+     function			= BOX
+	recolorable		= TRUE
+	file        			= "Images/Toolbar/toolbar.gif"
+	border      		= { 3, 3, 3, 3 }
+	stretch         	= TRUE
+      }
+  }
+}

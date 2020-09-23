@@ -1,0 +1,37 @@
+style "menuitem"	= "default"
+{
+  xthickness				= 1
+#  fg[PRELIGHT] 		= "#c7c8c9"
+#  text[PRELIGHT] 	= "#949494"
+
+
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      recolorable		= TRUE
+      file				= "Images/Menu-Menubar/menuitem.gif"
+      border			= { 10, 10, 10, 10 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state					= NORMAL
+      overlay_file			= "Images/Arrows/arrow-right-norm.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= RIGHT
+    }
+  image
+    {
+      function				= ARROW
+      recolorable			= TRUE
+      state					= PRELIGHT
+      overlay_file			= "Images/Arrows/arrow-right.gif"
+      overlay_stretch	= FALSE
+      arrow_direction	= RIGHT
+    }
+  }
+}
