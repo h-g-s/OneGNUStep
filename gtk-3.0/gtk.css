@@ -421,18 +421,29 @@ scrollbar.vertical button.up {
     /* border-left: 1px solid @outset_lighter_color;
     border-top: 1px solid @outset_lighter_color;
     border-right: 1.3px solid @black_color;
-    border-bottom: 1.3px solid @black_color; */
+    border-bottom: 1.3px solid @black_color; 
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    /*
+    
         padding-left: 2px;
         padding-right: 3px;
         padding-top: 3px;
-        padding-bottom: 5px;*/
+        padding-bottom: 5px;
+    min-height: 15px;
+    min-width: 15px; */
     min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
         -gtk-icon-source: url("../img/arrow-up.png");
 }
 
@@ -443,6 +454,17 @@ scrollbar.vertical button.up:active {
     border-top: 1.3px solid @black_color;
     border-right: 1px solid @inset_lighter_color;
     border-bottom: 1px solid @inset_lighter_color; */
+    min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
         -gtk-icon-source: url("../img/arrow-up.png");
 }
 
@@ -451,13 +473,29 @@ scrollbar.vertical button.up:disabled {
         padding-left: 2px;
         padding-right: 2px;
         padding-top: 3px;
-        padding-bottom: 4px; */
+        padding-bottom: 4px; 
+    min-height: 15px;  */
     min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
         -gtk-icon-source: url("../img/arrow-up-disabled.png");
 }
 
 scrollbar.vertical button.down {
     /*
+    border-left: 1px solid @outset_lighter_color;
+    border-right: 1px solid @black_color;
+    margin-left: 0px;
+    margin-right: 0px;
+
     border-left: 1px solid @outset_lighter_color;
     border-top: 1px solid @outset_lighter_color;
     border-right: 1.3px solid @black_color;
@@ -469,9 +507,17 @@ scrollbar.vertical button.down {
         padding-left: 2px;
         padding-right: 3px;
         padding-top: 4px;
-        padding-bottom: 4px; */
+        padding-bottom: 4px;  */
     min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-down.png");
 }
 
@@ -482,6 +528,17 @@ scrollbar.vertical button.down:active {
     border-top: 1.3px solid @black_color;
     border-right: 1px solid @inset_lighter_color;
     border-bottom: 1px solid @inset_lighter_color; */
+    
+    min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-down.png");
 }
 
@@ -490,8 +547,19 @@ scrollbar.vertical button.down:disabled {
         padding-left: 2px;
         padding-right: 2px;
         padding-top: 4px;
-        padding-bottom: 3px; */
+        padding-bottom: 3px;
+    min-height: 15px;  */
     min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
         -gtk-icon-source: url("../img/arrow-down-disabled.png");
 }
 
@@ -508,9 +576,19 @@ scrollbar.horizontal button.up {
         padding-left: 3px;
         padding-right: 5px;
         padding-top: 2px;
-        padding-bottom: 3px;*/
+        padding-bottom: 3px;
+    min-height: 15px;
+    min-width: 15px;  */
     min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-left.png");
 }
 
@@ -521,6 +599,16 @@ scrollbar.horizontal button.up:active {
     border-top: 1.3px solid @black_color;
     border-right: 1px solid @inset_lighter_color;
     border-bottom: 1px solid @inset_lighter_color; */
+    min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+    border-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;    
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-left.png");
 }
 
@@ -529,8 +617,18 @@ scrollbar.horizontal button.up:disabled {
         padding-left: 3px;
         padding-right: 3px;
         padding-top: 2px;
-        padding-bottom: 2px; */
+        padding-bottom: 2px; 
+    min-width: 15px;  */
+    min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-left-disabled.png");
 }
 
@@ -547,9 +645,20 @@ scrollbar.horizontal button.down {
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
-        padding-bottom: 3px; */
+        padding-bottom: 3px; 
+    min-height: 15px;
+    min-width: 15px;  */
+    
     min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-right.png");
 }
 
@@ -560,6 +669,17 @@ scrollbar.horizontal button.down:active {
     border-top: 1.3px solid @black_color;
     border-right: 1px solid @inset_lighter_color;
     border-bottom: 1px solid @inset_lighter_color; */
+    
+    min-height: 15px;
+    min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px; 
         -gtk-icon-source: url("../img/arrow-right.png");
 }
 
@@ -568,8 +688,18 @@ scrollbar.horizontal button.down:disabled {
         padding-left: 3px;
         padding-right: 3px;
         padding-top: 2px;
-        padding-bottom: 2px; */
+        padding-bottom: 2px;
+    min-width: 15px; */
+    min-height: 15px;
     min-width: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
         -gtk-icon-source: url("../img/arrow-right-disabled.png");
 }
 /**********************************************/
