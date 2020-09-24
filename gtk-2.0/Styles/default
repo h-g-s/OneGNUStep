@@ -72,7 +72,7 @@ style "default"
 
 #Fondo texto
 	#base[NORMAL]      = "#141414"
-	base[NORMAL]      = "#d0d0d0"
+	base[NORMAL]      = "#F4F4E0"
 	base[PRELIGHT]    = "#d0d0d0"
 	base[ACTIVE]      = "#d0d0d0"
 	# This affects selected icons in nautilus and selected text background
